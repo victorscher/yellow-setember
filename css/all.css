@@ -1,0 +1,107 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-style: inherit;
+    font-variant-ligatures: inherit;
+    font-variant-caps: inherit;
+    font-variant-numeric: inherit;
+    font-variant-east-asian: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+html{
+    font-family: "Montserrat";
+}
+
+.menu{
+    height: 100%;
+    background-color: #FEC134;
+    position: absolute;
+    right: 0;
+}
+
+.btn{
+    border-radius: 50px;
+    background-color: #FEC134;
+    border: none;
+}
+
+.btn-rounded{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 14px;
+}
+
+.left-buttons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:38px;
+    left: 38px;
+}
+
+.left-buttons-hover{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:35px;
+    left: 35px;
+}
+
+.btn-voice-bg, .btn-light-bg, .btn-menu-bg, .btn-info-bg{
+    width: 46px;
+    height: 46px;
+    border-radius:50px;
+    background-color: #E0E0E0;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;   
+}
+
+.txt-btn-voice{
+    text-indent: 2em;
+    opacity: 0;
+}
+
+.txt-btn-light{
+    text-indent: 2em;
+    opacity: 0;
+}
+
+.right-buttons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:38px;
+    right: 38px;
+}
+
+.right-buttons-hover{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:35px;
+    right: 35px;
+}
+
+
+.txt-btn-menu{
+    text-indent: -2em;
+    opacity: 0;
+}
+
+.txt-btn-info{
+    text-indent: -2em;
+    opacity: 0;
+}
