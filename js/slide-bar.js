@@ -102,6 +102,8 @@ slider.onchange = function(){
 
         document.querySelector('.medician-audio').pause();
         document.querySelector('.express-audio').pause();
+        document.querySelector('.medician-audio').load();
+        document.querySelector('.express-audio').load();
         
     }else if(slider.value > 52 && slider.value <= 78){
         gsap.to(".left-bar", {duration: 1.5, x: 1179, borderRadius: "100px 0 0 0"});
@@ -132,6 +134,8 @@ slider.onchange = function(){
 
         document.querySelector('.talk-audio').pause();
         document.querySelector('.express-audio').pause();
+        document.querySelector('.talk-audio').load();
+        document.querySelector('.express-audio').load();
 
     }else if(slider.value > 78 && slider.value <= 104){
         gsap.to(".left-bar", {duration: 1.5, x: 0, borderRadius: "0 0 100px 0"});
@@ -162,6 +166,8 @@ slider.onchange = function(){
 
         document.querySelector('.talk-audio').pause();
         document.querySelector('.medician-audio').pause();
+        document.querySelector('.talk-audio').load();
+        document.querySelector('.medician-audio').load();
     }
 
 

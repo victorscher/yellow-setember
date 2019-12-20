@@ -36,6 +36,9 @@ btnVoice.addEventListener("click", () => {
         iconBtnVoice.classList.remove("fa-volume-mute");
         iconBtnVoice.classList.add("fa-volume-up");
         textBtnVoice.textContent = "desligar voz";
+        document.querySelector('.talk-audio').load();
+        document.querySelector('.medician-audio').load();
+        document.querySelector('.express-audio').load();
         onVoice = true;
     }
 });
