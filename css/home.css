@@ -10,6 +10,7 @@ h1{
     font-family: 'Montserrat';
     font-size: 48px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 p{
@@ -50,6 +51,19 @@ p{
 }
 
 .talk-text{
+    position: absolute;
+    top: 350px;
+    opacity: 0;
+}
+
+
+.medician-title{
+    position: absolute;
+    top: 215px;
+    opacity: 0;
+}
+
+.medician-text{
     position: absolute;
     top: 350px;
     opacity: 0;

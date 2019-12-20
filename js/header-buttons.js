@@ -65,8 +65,8 @@ btnLight.addEventListener("click", () => {
         gsap.to(".left-buttons-hover div", {duration: 0.5, backgroundColor: "white"});
         gsap.to(".slider", {duration: 0.5, backgroundColor: "white"});
         gsap.to(".dot", {duration: 0.5, backgroundColor: "white"});
-        gsap.to(".main-title", {duration: 0.5, color: "white"});
-        gsap.to(".main-text", {duration: 0.5, color: "#B2B2B2"});
+        gsap.to("h1", {duration: 0.5, color: "white"});
+        gsap.to("p", {duration: 0.5, color: "#B2B2B2"});
         onLight = false;
     }else{
         iconBtnLight.classList.remove("far");
@@ -76,8 +76,8 @@ btnLight.addEventListener("click", () => {
         gsap.to(".left-buttons-hover div", {duration: 0.5, backgroundColor: "#E0E0E0"});
         gsap.to(".slider", {duration: 0.5, backgroundColor: "rgb(218, 218, 218)"});
         gsap.to(".dot", {duration: 0.5, backgroundColor: "rgb(85, 85, 85)"});
-        gsap.to(".main-title", {duration: 0.5, color: "black"});
-        gsap.to(".main-text", {duration: 0.5, color: "#767676"});
+        gsap.to("h1", {duration: 0.5, color: "black"});
+        gsap.to("p", {duration: 0.5, color: "#767676"});
         onLight = true;
     }
 });
