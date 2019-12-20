@@ -68,3 +68,15 @@ p{
     top: 350px;
     opacity: 0;
 }
+
+.express-title{
+    position: absolute;
+    top: 221px;
+    opacity: 0;
+}
+
+.express-text{
+    position: absolute;
+    top: 350px;
+    opacity: 0;
+}
