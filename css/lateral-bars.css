@@ -5,7 +5,8 @@
     position: absolute;
     left: 0;
     top:296px;
-    transform: translateX(-187px);
+    display: none;
+    opacity: 0;
     border-radius: 0 0 100px 0;
 }
 
@@ -16,6 +17,7 @@
     position: absolute;
     right: 0;
     top:296px;
-    transform: translateX(187px);
+    display: none;
+    opacity: 0;
     border-radius: 100px 0 0 0;
 }

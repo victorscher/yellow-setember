@@ -5,7 +5,7 @@
     left: 228px;
     top:30px;
     transform: translate(0, -200px);
-    opacity: 0;
+    display: none;
 }
 
 .image-2{
@@ -15,7 +15,7 @@
     left: 74px;
     top: 328px;
     transform: translate(-260px, 0);
-    opacity: 0;
+    display: none;
 }
 
 .image-3{
@@ -25,7 +25,7 @@
     left: 1032px;
     top: 94px;
     transform: translate(150px, 0);
-    opacity: 0;
+    display: none;
 }
 
 .image-4{
@@ -35,7 +35,7 @@
     left: 1022px;
     top: 382px;
     transform: translate(0, 65px);
-    opacity: 0;
+    display: none;
 }
 
 .talk-img{
@@ -45,6 +45,7 @@
     left: 521px;
     top: 112px;
     opacity: 0;
+    display: none;
 }
 
 .medician-img{
@@ -54,6 +55,7 @@
     left: 499px;
     top: 112px;
     opacity: 0;
+    display: none;
 }
 
 .express-img{
@@ -63,4 +65,5 @@
     left: 545px;
     top: 121px;
     opacity: 0;
+    display: none;
 }

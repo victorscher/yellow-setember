@@ -4,6 +4,9 @@ let btnVoice = document.querySelector(".btn-voice");
 let btnVoiceBg = document.querySelector(".btn-voice-bg");
 let textBtnVoice = document.querySelector(".txt-btn-voice");
 let iconBtnVoice = document.querySelector(".icon-btn-voice");
+let talkAudio = document.querySelector(".talk-audio");
+let medicianAudio = document.querySelector(".medician-audio");
+let expressAudio = document.querySelector(".express-audio");
 let onVoice = true;
 
 btnVoice.addEventListener("mouseenter", () => {
@@ -25,6 +28,9 @@ btnVoice.addEventListener("click", () => {
         iconBtnVoice.classList.remove("fa-volume-up");
         iconBtnVoice.classList.add("fa-volume-mute");
         textBtnVoice.textContent = "ligar voz";
+        document.querySelector('.talk-audio').pause();
+        document.querySelector('.medician-audio').pause();
+        document.querySelector('.express-audio').pause();
         onVoice = false;
     }else{
         iconBtnVoice.classList.remove("fa-volume-mute");
@@ -109,15 +115,17 @@ btnMenu.addEventListener("click", () => {
         iconBtnMenu.classList.remove("fa-ellipsis-v");
         iconBtnMenu.classList.add("fa-times");
         textBtnMenu.textContent = "fechar"
-        gsap.to(".menu", {duration: 1, width: "230px", ease: "bouce.out(1, 0.3)"});
-        gsap.to(".right-buttons", {duration: 0.5, right: "248px"});
-        gsap.to(".right-buttons-hover", {duration: 0.5, right: "245px"});
+        gsap.to(".menu", {duration: 1, width: "210px", ease: "bouce.out(1, 0.3)"});
+        gsap.to(".blur", {duration: 1, opacity: 0.3, display: "block"});
+        gsap.to(".right-buttons", {duration: 0.5, right: "220px"});
+        gsap.to(".right-buttons-hover", {duration: 0.5, right: "218px"});
         onMenu = false;
     }else{
         iconBtnMenu.classList.remove("fa-times");
         iconBtnMenu.classList.add("fa-ellipsis-v");
         textBtnMenu.textContent = "menu";
         gsap.to(".menu", {duration: 1, width: "0px", ease: "bouce.out(1, 0.3)"});
+        gsap.to(".blur", {duration: 1, opacity: 0, display: "none"});
         gsap.to(".right-buttons", {duration: 0.5, right: "38px"});
         gsap.to(".right-buttons-hover", {duration: 0.5, right: "35px"});
         onMenu = true;

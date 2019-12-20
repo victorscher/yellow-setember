@@ -48,12 +48,14 @@ p{
     position: absolute;
     top: 221px;
     opacity: 0;
+    display: none;
 }
 
 .talk-text{
     position: absolute;
     top: 350px;
     opacity: 0;
+    display: none;
 }
 
 
@@ -61,22 +63,26 @@ p{
     position: absolute;
     top: 215px;
     opacity: 0;
+    display: none;
 }
 
 .medician-text{
     position: absolute;
     top: 350px;
     opacity: 0;
+    display: none;
 }
 
 .express-title{
     position: absolute;
     top: 221px;
     opacity: 0;
+    display: none;
 }
 
 .express-text{
     position: absolute;
     top: 350px;
     opacity: 0;
+    display: none;
 }
