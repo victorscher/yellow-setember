@@ -37,3 +37,12 @@
     transform: translate(0, 65px);
     opacity: 0;
 }
+
+.talk-img{
+    width: 400px;
+    height: 245.41px;
+    position: absolute;
+    left: 521px;
+    top: 112px;
+    opacity: 0;
+}

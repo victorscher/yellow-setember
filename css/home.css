@@ -5,21 +5,27 @@
     justify-content: center;
 } 
 
-.main-title{
+h1{
     font-weight: bold;
     font-family: 'Montserrat';
     font-size: 48px;
     text-transform: uppercase;
-    margin-top:181px;
-    opacity: 0;
 }
 
-.main-text{
+p{
     margin-top: 46px;
     font-size: 24px;
     text-align: center;
     font-family: 'Josefin Sans';
     color: #767676;
+}
+
+.main-title{
+    margin-top:181px;
+    opacity: 0;
+}
+
+.main-text{
     opacity: 0;
 }
 
@@ -33,5 +39,18 @@
     font-family: "Montserrat";
     margin-top: 112px;
     text-transform: uppercase;
+    opacity: 0;
+    z-index: 1;
+}
+
+.talk-title{
+    position: absolute;
+    top: 221px;
+    opacity: 0;
+}
+
+.talk-text{
+    position: absolute;
+    top: 350px;
     opacity: 0;
 }

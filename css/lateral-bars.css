@@ -1,0 +1,21 @@
+.left-bar{
+    width: 187px;
+    height: 45px;
+    background-color: #FEC134;
+    position: absolute;
+    left: 0;
+    top:296px;
+    transform: translateX(-187px);
+    border-radius: 0 0 100px 0;
+}
+
+.right-bar{
+    width: 187px;
+    height: 45px;
+    background-color: #FEC134;
+    position: absolute;
+    right: 0;
+    top:296px;
+    transform: translateX(187px);
+    border-radius: 100px 0 0 0;
+}
