@@ -1,3 +1,10 @@
+.slidecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .slider {
     -webkit-appearance: none;
     width: 270px;
@@ -9,7 +16,6 @@
     transition: opacity .2s;
     position: absolute;
     top: 494px;
-    left: 548px;
     opacity: 0;
     z-index: 0;
   }
@@ -33,34 +39,40 @@
     cursor: pointer;
 }
 
+.dots{
+    position: absolute;
+    top: 495.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 270px;
+    height: 48px;   
+}
+
 .dot{
-    width: 14.5px;
-    height: 14.5px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: rgb(85, 85, 85);
-    opacity: 0;
+    opacity: 0; 
 } 
 
 .dot-1{
     position: absolute;
-    left: 587.5px;
-    top:512.5px;
+    left: 40px;
 }
 
 .dot-2{
     position: absolute;
-    left: 647.5px;
-    top:512.5px;
+    left: 100px;
 }
 
 .dot-3{
     position: absolute;
-    left: 707.5px;
-    top:512.5px;
+    left: 160px;
 }
 
 .dot-4{
     position: absolute;
-    left: 767.5px;
-    top:512.5px;
+    left: 220px;
 }

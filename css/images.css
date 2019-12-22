@@ -24,7 +24,7 @@
     position: absolute;
     left: 1032px;
     top: 94px;
-    transform: translate(150px, 0);
+    transform: translate(300px, 0);
     display: none;
 }
 
@@ -34,7 +34,7 @@
     position: absolute;
     left: 1022px;
     top: 382px;
-    transform: translate(0, 65px);
+    transform: translate(0, 180px);
     display: none;
 }
 
@@ -42,7 +42,6 @@
     width: 400px;
     height: 245.41px;
     position: absolute;
-    left: 521px;
     top: 112px;
     opacity: 0;
     display: none;
@@ -52,7 +51,6 @@
     width: 367.06px;
     height: 260px;
     position: absolute;
-    left: 499px;
     top: 112px;
     opacity: 0;
     display: none;
@@ -61,8 +59,7 @@
 .express-img{
     width: 276.01px;
     height: 260px;
-    position: absolute;
-    left: 545px;
+    position: absolute; 
     top: 121px;
     opacity: 0;
     display: none;

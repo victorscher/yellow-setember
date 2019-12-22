@@ -1,6 +1,7 @@
 let slider = document.querySelector(".slider");
 let change = new Event('change')
 let onArrow = true;
+let scrollPos = 0;
 
 window.addEventListener("keydown", event => {
     if(onButton === false && onArrow === true){
@@ -35,7 +36,7 @@ window.addEventListener("keydown", event => {
     }
     setTimeout(()=>{
         onArrow = true;
-    }, 500);
+    }, 1000);
 });
 
 slider.onchange = function(){
@@ -72,10 +73,17 @@ slider.onchange = function(){
         
         gsap.to(".main-title", {duration: 1, opacity: 1, fontSize: "48px", marginTop: "181px"});
         gsap.to(".main-text", {duration: 1, opacity: 1});
+
+        document.querySelector('.talk-audio').pause();
+        document.querySelector('.medician-audio').pause();
+        document.querySelector('.express-audio').pause();
+        document.querySelector('.talk-audio').load();
+        document.querySelector('.medician-audio').load();
+        document.querySelector('.express-audio').load();
     }
     else if(slider.value > 26 && slider.value <= 52){
-        gsap.to(".left-bar", {duration: 1.5, x: 0, borderRadius: "0 0 100px 0"});
-        gsap.to(".right-bar", {duration: 1.5, x: 0, borderRadius: " 100px 0 0 0"});
+        gsap.to(".left-bar", {duration: 1.5, x: 0, borderRadius: "0 0 100px 0", opacity: 1, display:"block"});
+        gsap.to(".right-bar", {duration: 1.5, x: 0, borderRadius: " 100px 0 0 0", opacity: 1, display:"block"});
 
         gsap.to(".image-1", {duration: 0.5, opacity: 0, display: "none"});
         gsap.to(".image-2", {duration: 0.5, opacity: 0, display: "none"});
@@ -106,8 +114,8 @@ slider.onchange = function(){
         document.querySelector('.express-audio').load();
         
     }else if(slider.value > 52 && slider.value <= 78){
-        gsap.to(".left-bar", {duration: 1.5, x: 1179, borderRadius: "100px 0 0 0"});
-        gsap.to(".right-bar", {duration: 1.5, x: -1179, borderRadius: " 0 0 100px 0"});
+        gsap.to(".left-bar", {duration: 1.5, x: 1179, borderRadius: "100px 0 0 0", opacity: 1, display:"block"});
+        gsap.to(".right-bar", {duration: 1.5, x: -1179, borderRadius: " 0 0 100px 0", opacity: 1, display:"block"});
 
         gsap.to(".image-1", {duration: 0.5, opacity: 0});
         gsap.to(".image-2", {duration: 0.5, opacity: 0});
@@ -138,8 +146,8 @@ slider.onchange = function(){
         document.querySelector('.express-audio').load();
 
     }else if(slider.value > 78 && slider.value <= 104){
-        gsap.to(".left-bar", {duration: 1.5, x: 0, borderRadius: "0 0 100px 0"});
-        gsap.to(".right-bar", {duration: 1.5, x: 0, borderRadius: "100px 0 0 0"});
+        gsap.to(".left-bar", {duration: 1.5, x: 0, borderRadius: "0 0 100px 0", opacity: 1, display:"block"});
+        gsap.to(".right-bar", {duration: 1.5, x: 0, borderRadius: "100px 0 0 0", opacity: 1, display:"block"});
 
         gsap.to(".image-1", {duration: 0.5, opacity: 0});
         gsap.to(".image-2", {duration: 0.5, opacity: 0});
