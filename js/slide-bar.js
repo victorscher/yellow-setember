@@ -51,8 +51,8 @@ slider.onchange = function(){
     }
 
     if(slider.value <= 26){
-        gsap.to(".left-bar", {duration: 2, opacity:0, display: "none"});
-        gsap.to(".right-bar", {duration: 2, opacity:0, display: "none"});
+        gsap.to(".left-bar", {duration: 0.5, opacity:0, display: "none"});
+        gsap.to(".right-bar", {duration: 0.5, opacity:0, display: "none"});
         
         gsap.to(".talk-title", {duration: 0.5, opacity: 0, display: "none"});
         gsap.to(".talk-text", {duration: 0.5, opacity: 0, display: "none"});
@@ -82,8 +82,19 @@ slider.onchange = function(){
         document.querySelector('.express-audio').load();
     }
     else if(slider.value > 26 && slider.value <= 52){
-        gsap.to(".left-bar", {duration: 1.5, x: 0, borderRadius: "0 0 100px 0", opacity: 1, display:"block"});
-        gsap.to(".right-bar", {duration: 1.5, x: 0, borderRadius: " 100px 0 0 0", opacity: 1, display:"block"});
+        if(barPos === 3){
+            gsap.to(".left-bar", {duration: 0.5, borderRadius: "100px 0 0 0"});
+            gsap.to(".right-bar", {duration: 0.5, borderRadius: " 0 0 100px 0"});
+            gsap.to(".left-bar", {duration: 1.5, x: scrWidth, opacity: 1, display:"block"});
+            gsap.to(".right-bar", {duration: 1.5, x: -scrWidth, opacity: 1, display:"block"});
+            barPos = 1;
+        }else{
+            gsap.to(".left-bar", {duration: 0.5,borderRadius: "0 0 100px 0"});
+            gsap.to(".right-bar", {duration: 0.5, borderRadius: " 100px 0 0 0"});
+            gsap.to(".left-bar", {duration: 1.5, x: 0, opacity: 1, display:"block"});
+            gsap.to(".right-bar", {duration: 1.5, x: 0, opacity: 1, display:"block"});
+            barPos = 1;
+        }
 
         gsap.to(".image-1", {duration: 0.5, opacity: 0, display: "none"});
         gsap.to(".image-2", {duration: 0.5, opacity: 0, display: "none"});
@@ -114,8 +125,11 @@ slider.onchange = function(){
         document.querySelector('.express-audio').load();
         
     }else if(slider.value > 52 && slider.value <= 78){
-        gsap.to(".left-bar", {duration: 1.5, x: 1179, borderRadius: "100px 0 0 0", opacity: 1, display:"block"});
-        gsap.to(".right-bar", {duration: 1.5, x: -1179, borderRadius: " 0 0 100px 0", opacity: 1, display:"block"});
+        gsap.to(".left-bar", {duration: 0.5, borderRadius: "100px 0 0 0"});
+        gsap.to(".right-bar", {duration: 0.5, borderRadius: " 0 0 100px 0"});
+        gsap.to(".left-bar", {duration: 1.5, x: scrWidth, opacity: 1, display:"block"});
+        gsap.to(".right-bar", {duration: 1.5, x: -scrWidth, opacity: 1, display:"block"});
+        barPos = 2;
 
         gsap.to(".image-1", {duration: 0.5, opacity: 0});
         gsap.to(".image-2", {duration: 0.5, opacity: 0});
@@ -146,8 +160,19 @@ slider.onchange = function(){
         document.querySelector('.express-audio').load();
 
     }else if(slider.value > 78 && slider.value <= 104){
-        gsap.to(".left-bar", {duration: 1.5, x: 0, borderRadius: "0 0 100px 0", opacity: 1, display:"block"});
-        gsap.to(".right-bar", {duration: 1.5, x: 0, borderRadius: "100px 0 0 0", opacity: 1, display:"block"});
+        if(barPos === 1){
+            gsap.to(".left-bar", {duration: 0.5, borderRadius: "100px 0 0 0"});
+            gsap.to(".right-bar", {duration: 0.5, borderRadius: " 0 0 100px 0"});
+            gsap.to(".left-bar", {duration: 1.5, x: scrWidth, opacity: 1, display:"block"});
+            gsap.to(".right-bar", {duration: 1.5, x: -scrWidth, opacity: 1, display:"block"});
+            barPos = 3;
+        }else{
+            gsap.to(".left-bar", {duration: 0.5, borderRadius: "0 0 100px 0"});
+            gsap.to(".right-bar", {duration: 0.5, borderRadius: "100px 0 0 0"});
+            gsap.to(".left-bar", {duration: 1.5, x: 0, opacity: 1, display:"block"});
+            gsap.to(".right-bar", {duration: 1.5, x: 0, opacity: 1, display:"block"});
+            barPos = 3;
+        }
 
         gsap.to(".image-1", {duration: 0.5, opacity: 0});
         gsap.to(".image-2", {duration: 0.5, opacity: 0});

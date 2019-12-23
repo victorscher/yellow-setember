@@ -118,19 +118,19 @@ btnMenu.addEventListener("click", () => {
         iconBtnMenu.classList.remove("fa-ellipsis-v");
         iconBtnMenu.classList.add("fa-times");
         textBtnMenu.textContent = "fechar"
-        gsap.to(".menu", {duration: 1, width: "210px", ease: "bouce.out(1, 0.3)"});
+        gsap.to(".menu", {duration: 1, right: "0px", display: "flex", ease: "bouce.out(1, 0.3)"});
         gsap.to(".blur", {duration: 1, opacity: 0.3, display: "block"});
-        gsap.to(".right-buttons", {duration: 0.5, right: "220px"});
-        gsap.to(".right-buttons-hover", {duration: 0.5, right: "218px"});
+        gsap.to(".right-buttons", {duration: 0.5, right: "260px"});
+        gsap.to(".right-buttons-hover", {duration: 0.5, right: "258px"});
         onMenu = false;
     }else{
         iconBtnMenu.classList.remove("fa-times");
         iconBtnMenu.classList.add("fa-ellipsis-v");
         textBtnMenu.textContent = "menu";
-        gsap.to(".menu", {duration: 1, width: "0px", ease: "bouce.out(1, 0.3)"});
+        gsap.to(".menu", {duration: 1, right: "-250px", display: "none", ease: "bouce.out(1, 0.3)"});
         gsap.to(".blur", {duration: 1, opacity: 0, display: "none"});
-        gsap.to(".right-buttons", {duration: 0.5, right: "38px"});
-        gsap.to(".right-buttons-hover", {duration: 0.5, right: "35px"});
+        gsap.to(".right-buttons", {duration: 1, right: "38px"});
+        gsap.to(".right-buttons-hover", {duration: 1, right: "35px"});
         onMenu = true;
     }
 });

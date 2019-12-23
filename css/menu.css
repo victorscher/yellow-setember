@@ -1,0 +1,18 @@
+.menu{
+    height: 100%;
+    background-color: #FEC134;
+    position: absolute;
+    width: 250px;
+    right: -250px;
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title{
+    margin-top: 40px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 18px;    
+}

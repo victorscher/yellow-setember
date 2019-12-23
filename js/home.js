@@ -4,6 +4,11 @@ gsap.to(".main-button", {duration: 1, opacity: 1, width:"270px", height:"48px", 
 
 let mainButton = document.querySelector(".main-button");
 let onButton = true;
+let barPos = 1;
+let scrWidth = window.innerWidth -187;
+window.onresize = function(){
+    scrWidth = window.innerWidth -187;
+};
 
 mainButton.addEventListener("click", () => {
     gsap.to(".main-button", {duration: 0.5, opacity: 0, zIndex: 0});
@@ -24,6 +29,7 @@ mainButton.addEventListener("click", () => {
    
     gsap.to(".left-bar", {duration: 2, x: 0, opacity: 1, display: "block"});
     gsap.to(".right-bar", {duration: 2, x: 0, opacity: 1, display: "block"});
+    barPos = 1;
 
     if(onVoice == true){
         document.querySelector('.talk-audio').play();
