@@ -28,13 +28,15 @@ p{
 }
 
 .main-title{
-    margin-top:129px;
+    margin-top:130px;
     opacity: 0;
+    font-size: 24px;
 }
 
 .main-text{
     opacity: 0;
     text-align: center;
+    font-size: 18px;
 }
 
 .main-button{
@@ -95,7 +97,38 @@ p{
 }
 
 
-@media (min-width: 375px){
+@media (min-width: 414px){
+
+    .main-title{
+        margin-top:130px;
+        opacity: 0;
+        font-size: 28px;
+    }
+
+    .main-text{
+        padding: 0 30px;
+        font-size: 18px;   
+    }
+
+    .talk-text{
+        padding: 0 30px;
+        font-size: 18px;   
+    }
+
+    .medician-text{
+        padding: 0 30px;
+        font-size: 18px;     
+    }
+
+    .express-text{
+        padding: 0 20px; 
+        font-size: 18px;  
+    }
+    
+}
+
+
+@media (min-width: 1366px){
     h1{
         font-weight: bold;
         font-family: 'Montserrat';
@@ -107,25 +140,25 @@ p{
     .main-title{
         margin-top:181px;
         opacity: 0;
-        font-size: 18px;
+        font-size: 48px;
     }
 
     .main-text{
-        padding: 0 20px;
+        padding: 0 250px;
         font-size: 18px;   
     }
 
     .talk-text{
-        padding: 0 20px;
+        padding: 0 250px;
         font-size: 18px;   
     }
 
     .medician-text{
-        padding: 0 20px;   
+        padding: 0 250px;   
     }
 
     .express-text{
-        padding: 0 20px; 
+        padding: 0 250px; 
         font-size: 18px;  
     }
     
