@@ -129,7 +129,7 @@ html{
     top: 65px;
 }
 
-@media (min-width: 1025px){
+@media (min-width: 415  px){
     .btn-voice{
         margin-right: 0;
     }
