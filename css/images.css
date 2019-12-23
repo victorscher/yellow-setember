@@ -1,3 +1,4 @@
+
 .image-1{
     width: 160px;
     height: 134.94px;
@@ -9,12 +10,11 @@
 }
 
 .image-2{
-    width: 300px;
-    height: 282.03px;
+    width: 200px;
+    height: 188.02px;
     position: absolute;
-    left: 74px;
-    top: 328px;
-    transform: translate(-260px, 0);
+    top: 470px;
+    transform: translate(-160px, 0);
     display: none;
 }
 
@@ -39,28 +39,170 @@
 }
 
 .talk-img{
-    width: 400px;
-    height: 245.41px;
+    width: 200px;
+    height: 122.71px;
     position: absolute;
-    top: 112px;
+    top: 192px;
     opacity: 0;
     display: none;
 }
 
 .medician-img{
-    width: 367.06px;
-    height: 260px;
+    width: 200px;
+    height: 141.67px;
     position: absolute;
-    top: 112px;
+    top: 170px;
     opacity: 0;
     display: none;
 }
 
 .express-img{
-    width: 276.01px;
-    height: 260px;
+    width: 180px;
+    height: 169.56px;
     position: absolute; 
-    top: 121px;
+    top: 150px;
     opacity: 0;
     display: none;
+}
+
+@media (min-width: 720px){
+    .image-2{
+        width: 200px;
+        height: 188.02px;
+        position: absolute;
+        top: 521px;
+        transform: translate(-160px, 0);
+        display: none;
+    }
+
+    .talk-img{
+        width: 400px;
+        height: 245.41px;
+        position: absolute;
+        top: 112px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media (min-width: 721px){
+    .image-2{
+        width: 300px;
+        height: 282.03px;
+        position: absolute;
+        top: 800px;
+        transform: translate(-160px, 0);
+        display: none;
+    }
+}
+
+@media (min-width: 1025px){
+    .image-1{
+        width: 160px;
+        height: 134.94px;
+        position: absolute;
+        left: 228px;
+        top:30px;
+        transform: translate(0, -200px);
+        display: none;
+    }
+
+    .image-2{
+        width: 300px;
+        height: 282.03px;
+        position: absolute;
+        left: 74px;
+        top: 328px;
+        transform: translate(-260px, 0);
+        display: none;
+    }
+
+    .image-3{
+        width: 150px;
+        height: 111.82;
+        position: absolute;
+        left: 1032px;
+        top: 94px;
+        transform: translate(300px, 0);
+        display: none;
+    }
+
+    .image-4{
+        width: 260px;
+        height: 191.78;
+        position: absolute;
+        left: 1022px;
+        top: 382px;
+        transform: translate(0, 180px);
+        display: none;
+    }
+
+    .talk-img{
+        width: 400px;
+        height: 245.41px;
+        position: absolute;
+        top: 112px;
+        opacity: 0;
+        display: none;
+    }
+
+    .medician-img{
+        width: 367.06px;
+        height: 260px;
+        position: absolute;
+        top: 112px;
+        opacity: 0;
+        display: none;
+    }    
+
+    .express-img{
+        width: 276.01px;
+        height: 260px;
+        position: absolute; 
+        top: 121px;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media (min-width: 1920px){
+    .image-1{
+        width: 210px;
+        height: 177.11px;
+        position: absolute;
+        left: 228px;
+        top:30px;
+        transform: translate(0, -200px);
+        display: none;
+    }
+
+    .image-2{
+        width: 350px;
+        height: 329.03px;
+        position: absolute;
+        left: 74px;
+        top: 328px;
+        transform: translate(-260px, 0);
+        display: none;
+    }
+
+    .image-3{
+        width: 200px;
+        height: 149.09;
+        position: absolute;
+        left: 1400px;
+        top: 94px;
+        transform: translate(300px, 0);
+        display: none;
+    }
+
+    .image-4{
+        width: 310px;
+        height: 228.67;
+        position: absolute;
+        left: 1500px;
+        top: 450px;
+        transform: translate(0, 180px);
+        display: none;
+    }
 }

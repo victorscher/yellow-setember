@@ -9,19 +9,21 @@ let medicianAudio = document.querySelector(".medician-audio");
 let expressAudio = document.querySelector(".express-audio");
 let onVoice = true;
 
-btnVoice.addEventListener("mouseenter", () => {
-    gsap.to(btnVoiceBg, {duration: 0.2, opacity: 1, width: "174px"});
-    setTimeout(() => {
-        gsap.to(textBtnVoice, {duration: 0.2, opacity: 1});
-    }, 100);
-});
-
-btnVoice.addEventListener("mouseleave", () => {
-    gsap.to(textBtnVoice, {duration: 0.2, opacity: 0});
-    setTimeout(() => {
-        gsap.to(btnVoiceBg, {duration: 0.2, opacity: 0, width: "46px"});
-    }, 100);
-});
+if(scrWidth > 1024){
+    btnVoice.addEventListener("mouseenter", () => {
+        gsap.to(btnVoiceBg, {duration: 0.2, opacity: 1, width: "174px"});
+        setTimeout(() => {
+            gsap.to(textBtnVoice, {duration: 0.2, opacity: 1});
+        }, 100);
+    });
+    
+    btnVoice.addEventListener("mouseleave", () => {
+        gsap.to(textBtnVoice, {duration: 0.2, opacity: 0});
+        setTimeout(() => {
+            gsap.to(btnVoiceBg, {duration: 0.2, opacity: 0, width: "46px"});
+        }, 100);
+    });
+}
 
 btnVoice.addEventListener("click", () => {
     if(onVoice == true){
@@ -51,19 +53,21 @@ let textBtnLight = document.querySelector(".txt-btn-light");
 let iconBtnLight = document.querySelector(".icon-btn-light");
 let onLight = true;
 
-btnLight.addEventListener("mouseenter", () => {
-    gsap.to(btnLightBg, {duration: 0.2, opacity: 1, width: "174px"});
-    setTimeout(() => {
-        gsap.to(textBtnLight, {duration: 0.2, opacity: 1});
-    }, 100);
-});
-
-btnLight.addEventListener("mouseleave", () => {
-    gsap.to(textBtnLight, {duration: 0.2, opacity: 0});
-    setTimeout(() => {
-        gsap.to(btnLightBg, {duration: 0.2, opacity: 0, width: "46px"});
-    }, 100);
-});
+if(scrWidth > 1024){
+    btnLight.addEventListener("mouseenter", () => {
+        gsap.to(btnLightBg, {duration: 0.2, opacity: 1, width: "174px"});
+        setTimeout(() => {
+            gsap.to(textBtnLight, {duration: 0.2, opacity: 1});
+        }, 100);
+    });
+    
+    btnLight.addEventListener("mouseleave", () => {
+        gsap.to(textBtnLight, {duration: 0.2, opacity: 0});
+        setTimeout(() => {
+            gsap.to(btnLightBg, {duration: 0.2, opacity: 0, width: "46px"});
+        }, 100);
+    });
+}
 
 btnLight.addEventListener("click", () => {
     if(onLight == true){
@@ -99,19 +103,21 @@ let textBtnMenu = document.querySelector(".txt-btn-menu");
 let iconBtnMenu = document.querySelector(".icon-btn-menu");
 let onMenu = true;
 
-btnMenu.addEventListener("mouseenter", () => {
-    gsap.to(btnMenuBg, {duration: 0.2, opacity: 1, width: "125px"});
-    setTimeout(() => {
-        gsap.to(textBtnMenu, {duration: 0.2, opacity: 1});
-    }, 100);
-});
-
-btnMenu.addEventListener("mouseleave", () => {
-    gsap.to(textBtnMenu, {duration: 0.2, opacity: 0});
-    setTimeout(() => {
-        gsap.to(btnMenuBg, {duration: 0.2, opacity: 0, width: "46px"});
-    }, 100);
-});
+if(scrWidth > 1024){
+    btnMenu.addEventListener("mouseenter", () => {
+        gsap.to(btnMenuBg, {duration: 0.2, opacity: 1, width: "125px"});
+        setTimeout(() => {
+            gsap.to(textBtnMenu, {duration: 0.2, opacity: 1});
+        }, 100);
+    });
+    
+    btnMenu.addEventListener("mouseleave", () => {
+        gsap.to(textBtnMenu, {duration: 0.2, opacity: 0});
+        setTimeout(() => {
+            gsap.to(btnMenuBg, {duration: 0.2, opacity: 0, width: "46px"});
+        }, 100);
+    });
+}
 
 btnMenu.addEventListener("click", () => {
     if(onMenu == true){
@@ -142,16 +148,18 @@ let btnInfoBg = document.querySelector(".btn-info-bg");
 let textBtnInfo = document.querySelector(".txt-btn-info");
 let iconBtnInfo = document.querySelector(".icon-btn-info");
 
-btnInfo.addEventListener("mouseenter", () => {
-    gsap.to(btnInfoBg, {duration: 0.2, opacity: 1, width: "125px"});
-    setTimeout(() => {
-        gsap.to(textBtnInfo, {duration: 0.2, opacity: 1});
-    }, 100);
-});
-
-btnInfo.addEventListener("mouseleave", () => {
-    gsap.to(textBtnInfo, {duration: 0.2, opacity: 0});
-    setTimeout(() => {
-        gsap.to(btnInfoBg, {duration: 0.2, opacity: 0, width: "46px"});
-    }, 100);
-});
+if(scrWidth > 1014){
+    btnInfo.addEventListener("mouseenter", () => {
+        gsap.to(btnInfoBg, {duration: 0.2, opacity: 1, width: "125px"});
+        setTimeout(() => {
+            gsap.to(textBtnInfo, {duration: 0.2, opacity: 1});
+        }, 100);
+    });
+    
+    btnInfo.addEventListener("mouseleave", () => {
+        gsap.to(textBtnInfo, {duration: 0.2, opacity: 0});
+        setTimeout(() => {
+            gsap.to(btnInfoBg, {duration: 0.2, opacity: 0, width: "46px"});
+        }, 100);
+    });   
+}

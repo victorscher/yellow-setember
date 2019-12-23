@@ -66,12 +66,21 @@ slider.onchange = function(){
         gsap.to(".express-text", {duration: 0.5, opacity: 0, display: "none"});
         gsap.to(".express-img", {duration: 0.5, opacity: 0, display: "none"});
 
-        gsap.to(".image-1", {duration: 1, y: 0, display: "block", opacity: 1});
         gsap.to(".image-2", {duration: 1, x: 0, display: "block", opacity: 1});
-        gsap.to(".image-3", {duration: 1, x: 0, display: "block", opacity: 1});
-        gsap.to(".image-4", {duration: 1, y: 0, display: "block", opacity: 1});
+        if(scrWidth >= 720){
+            gsap.to(".image-1", {duration: 1, y: 0, display: "block", opacity: 1});
+            gsap.to(".image-3", {duration: 1, x: 0, display: "block", opacity: 1});
+            gsap.to(".image-4", {duration: 1, y: 0, display: "block", opacity: 1});
+        }
+
+        if(scrWidth <= 475){
+            gsap.to(".main-title", {duration: 1.5, fontSize: "28px", marginTop: "129x"})
+            gsap.to(".slider", {duartion: 1.5, top: "380px"});
+            gsap.to(".dots", {duartion: 1.5, top: "381.5px"});
+        }else{
+            gsap.to(".main-title", {duration: 0.5, fontSize: "48px", marginTop: "181px"});
+        }
         
-        gsap.to(".main-title", {duration: 1, opacity: 1, fontSize: "48px", marginTop: "181px"});
         gsap.to(".main-text", {duration: 1, opacity: 1});
 
         document.querySelector('.talk-audio').pause();
@@ -85,8 +94,8 @@ slider.onchange = function(){
         if(barPos === 3){
             gsap.to(".left-bar", {duration: 0.5, borderRadius: "100px 0 0 0"});
             gsap.to(".right-bar", {duration: 0.5, borderRadius: " 0 0 100px 0"});
-            gsap.to(".left-bar", {duration: 1.5, x: scrWidth, opacity: 1, display:"block"});
-            gsap.to(".right-bar", {duration: 1.5, x: -scrWidth, opacity: 1, display:"block"});
+            gsap.to(".left-bar", {duration: 1.5, x: scrWidthToBar, opacity: 1, display:"block"});
+            gsap.to(".right-bar", {duration: 1.5, x: -scrWidthToBar, opacity: 1, display:"block"});
             barPos = 1;
         }else{
             gsap.to(".left-bar", {duration: 0.5,borderRadius: "0 0 100px 0"});
@@ -96,11 +105,18 @@ slider.onchange = function(){
             barPos = 1;
         }
 
+        if(scrWidth <= 475){
+            gsap.to(".main-title", {duration: 1.5, fontSize: "22px", marginTop: "112px"})
+            gsap.to(".slider", {duartion: 1.5, top: "524px"});
+            gsap.to(".dots", {duartion: 1.5, top: "525.5px"});
+        }else{
+            gsap.to(".main-title", {duration: 0.5, fontSize: "24px", marginTop: "65px"});
+        }
+
         gsap.to(".image-1", {duration: 0.5, opacity: 0, display: "none"});
         gsap.to(".image-2", {duration: 0.5, opacity: 0, display: "none"});
         gsap.to(".image-3", {duration: 0.5, opacity: 0, display: "none"});
         gsap.to(".image-4", {duration: 0.5, opacity: 0, display: "none"});
-        gsap.to(".main-title", {duration: 0.5, fontSize: "24px", marginTop: "65px"})
         gsap.to(".main-text", {duration: 0.5, opacity: 0});
 
         gsap.to(".medician-title", {duration: 0.5, opacity: 0, display: "none"});
@@ -127,15 +143,21 @@ slider.onchange = function(){
     }else if(slider.value > 52 && slider.value <= 78){
         gsap.to(".left-bar", {duration: 0.5, borderRadius: "100px 0 0 0"});
         gsap.to(".right-bar", {duration: 0.5, borderRadius: " 0 0 100px 0"});
-        gsap.to(".left-bar", {duration: 1.5, x: scrWidth, opacity: 1, display:"block"});
-        gsap.to(".right-bar", {duration: 1.5, x: -scrWidth, opacity: 1, display:"block"});
+        gsap.to(".left-bar", {duration: 1.5, x: scrWidthToBar, opacity: 1, display:"block"});
+        gsap.to(".right-bar", {duration: 1.5, x: -scrWidthToBar, opacity: 1, display:"block"});
         barPos = 2;
 
         gsap.to(".image-1", {duration: 0.5, opacity: 0});
         gsap.to(".image-2", {duration: 0.5, opacity: 0});
         gsap.to(".image-3", {duration: 0.5, opacity: 0});
         gsap.to(".image-4", {duration: 0.5, opacity: 0});
-        gsap.to(".main-title", {duration: 1, fontSize: "24px", marginTop: "65px"})
+        if(scrWidth <= 475){
+            gsap.to(".main-title", {duration: 1.5, fontSize: "22px", marginTop: "112px"});
+            gsap.to(".slider", {duartion: 1.5, top: "524px"});
+            gsap.to(".dots", {duartion: 1.5, top: "525.5px"});
+        }else{
+            gsap.to(".main-title", {duration: 0.5, fontSize: "24px", marginTop: "65px"})
+        }
         gsap.to(".main-text", {duration: 0.5, opacity: 0});
 
         gsap.to(".talk-title", {duration: 0.5, opacity: 0, display: "none"});
@@ -163,8 +185,8 @@ slider.onchange = function(){
         if(barPos === 1){
             gsap.to(".left-bar", {duration: 0.5, borderRadius: "100px 0 0 0"});
             gsap.to(".right-bar", {duration: 0.5, borderRadius: " 0 0 100px 0"});
-            gsap.to(".left-bar", {duration: 1.5, x: scrWidth, opacity: 1, display:"block"});
-            gsap.to(".right-bar", {duration: 1.5, x: -scrWidth, opacity: 1, display:"block"});
+            gsap.to(".left-bar", {duration: 1.5, x: scrWidthToBar, opacity: 1, display:"block"});
+            gsap.to(".right-bar", {duration: 1.5, x: -scrWidthToBar, opacity: 1, display:"block"});
             barPos = 3;
         }else{
             gsap.to(".left-bar", {duration: 0.5, borderRadius: "0 0 100px 0"});
@@ -178,7 +200,14 @@ slider.onchange = function(){
         gsap.to(".image-2", {duration: 0.5, opacity: 0});
         gsap.to(".image-3", {duration: 0.5, opacity: 0});
         gsap.to(".image-4", {duration: 0.5, opacity: 0});
-        gsap.to(".main-title", {duration: 1, fontSize: "24px", marginTop: "65px"})
+        if(scrWidth <= 475){
+            gsap.to(".slider", {duartion: 1.5, top: "524px"});
+            gsap.to(".dots", {duartion: 1.5, top: "525.5px"});
+
+            gsap.to(".main-title", {duration: 1.5, fontSize: "22px", marginTop: "112px"})
+        }else{
+            gsap.to(".main-title", {duration: 0.5, fontSize: "24px", marginTop: "65px"})
+        }
         gsap.to(".main-text", {duration: 0.5, opacity: 0});
 
         gsap.to(".talk-title", {duration: 0.5, opacity: 0, display: "none"});

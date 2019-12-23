@@ -15,7 +15,7 @@
     -webkit-transition: 1s;
     transition: opacity .2s;
     position: absolute;
-    top: 494px;
+    top: 524px;
     opacity: 0;
     z-index: 0;
   }
@@ -41,7 +41,7 @@
 
 .dots{
     position: absolute;
-    top: 495.5px;
+    top: 525.5px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -75,4 +75,24 @@
 .dot-4{
     position: absolute;
     left: 220px;
+}
+
+@media (min-width: 476px){
+    .slider{
+        top: 494.9px;
+    }
+
+    .dots{
+        top: 495.5px;
+    }
+}
+
+@media (min-width: 1920px){
+    .slider{
+        top: 600px;
+    }
+
+    .dots{
+        top: 601.5px;
+    }
 }

@@ -47,7 +47,7 @@ html{
 
 .left-buttons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     top:38px;
     left: 38px;
@@ -74,6 +74,14 @@ html{
     opacity: 0;   
 }
 
+.btn-voice{
+    margin-right: 22px;
+}
+
+.btn-info{
+    margin-left: 22px;
+}
+
 .txt-btn-voice{
     text-indent: 2em;
     opacity: 0;
@@ -86,7 +94,7 @@ html{
 
 .right-buttons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     top:38px;
     right: 38px;
@@ -119,4 +127,19 @@ html{
     position: absolute;
     left: 544px;
     top: 65px;
+}
+
+@media (min-width: 1025px){
+    .btn-voice{
+        margin-right: 0;
+    }
+    
+    .btn-info{
+        margin-left: 0;
+    }
+    
+    .right-buttons, .left-buttons{
+        flex-direction: column;
+    }
+
 }

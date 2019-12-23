@@ -1,23 +1,35 @@
 .left-bar{
-    width: 187px;
+    width: 52px;
     height: 45px;
     background-color: #FEC134;
     position: absolute;
     left: 0;
-    top:296px;
+    top: 225px;
     display: none;
     opacity: 0;
     border-radius: 0 0 100px 0;
 }
 
 .right-bar{
-    width: 187px;
+    width: 52px;
     height: 45px;
     background-color: #FEC134;
     position: absolute;
     right: 0;
-    top:296px;
+    top: 225px;
     display: none;
     opacity: 0;
     border-radius: 100px 0 0 0;
+}
+
+@media (min-width: 1025px){
+    .left-bar{
+        width: 187px;
+        top:296px;
+    }
+    
+    .right-bar{
+        width: 187px;
+        top:296px;
+    }
 }
